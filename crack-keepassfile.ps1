@@ -17,8 +17,9 @@
     
     This is the path for the password file to use in the brute force attempt
 
-.PARAMETER pwdpath
-    <Brief description of parameter input required. Repeat this attribute if required>
+.PARAMETER targetfile
+    
+    This is the path for the target kdbx file
 
 
 .NOTES
@@ -93,7 +94,7 @@ Function Load-KeePassBinarys{
           }
             }
                                                                                                                                                                                                                                                                                                                                                                                     function try-key($x){
-   
+ function try-key($x){
     $Key = new-object KeePassLib.Keys.CompositeKey
     $Key.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($x)));
     try{
