@@ -93,7 +93,6 @@ Function Load-KeePassBinarys{
            Write-Output "KeePass Binaries loaded from $path"
           }
             }
-                                                                                                                                                                                                                                                                                                                                                                                    function try-key($x){
  function try-key($x){
     $Key = new-object KeePassLib.Keys.CompositeKey
     $Key.AddUserKey((New-Object KeePassLib.Keys.KcpPassword($x)));
